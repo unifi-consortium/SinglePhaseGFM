@@ -21,7 +21,6 @@ ORDERED_OBJS += \
 "./F2837xD_PieVect.obj" \
 "./F2837xD_SysCtrl.obj" \
 "./F2837xD_usDelay.obj" \
-"../SFO_v8_fpu_lib_build_c28.lib" \
 $(GEN_CMDS__FLAG) \
 -lrts2800_fpu32.lib \
 -l2837xD_RAM_lnk_cpu1.cmd \
@@ -149,7 +148,7 @@ BIN_OUTPUTS__QUOTED += \
 all: SinglePhaseGFM_1500W_120V.out
 
 # Tool invocations
-SinglePhaseGFM_1500W_120V.out: $(OBJS) $(LIB_SRCS) $(GEN_CMDS)
+SinglePhaseGFM_1500W_120V.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: C2000 Linker'
 	"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-c2000_20.2.5.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --fp_mode=relaxed --define=CPU1 -g --diag_suppress=1311 --diag_warning=225 --display_error_number --abi=coffabi -z -m"SinglePhaseGFM_1500W_120V.map" --stack_size=0x100 --warn_sections -i"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-c2000_20.2.5.LTS/lib" -i"C:/ti/ccs1040/ccs/tools/compiler/ti-cgt-c2000_20.2.5.LTS/include" -i"C:/ti/C2000Ware_5_00_00_00/device_support/f2837xd/common/cmd" -i"C:/ti/C2000Ware_5_00_00_00/device_support/f2837xd/headers/cmd" --reread_libs --display_error_number --xml_link_info="SinglePhaseGFM_1500W_120V_linkInfo.xml" --rom_model -o "SinglePhaseGFM_1500W_120V.out" $(ORDERED_OBJS)

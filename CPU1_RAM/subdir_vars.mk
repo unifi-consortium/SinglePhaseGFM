@@ -5,9 +5,6 @@
 SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
-LIB_SRCS += \
-../SFO_v8_fpu_lib_build_c28.lib 
-
 ASM_SRCS += \
 ../F2837xD_CodeStartBranch.asm \
 ../F2837xD_usDelay.asm 
