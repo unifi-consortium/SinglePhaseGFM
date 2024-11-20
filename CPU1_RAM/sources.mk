@@ -112,4 +112,11 @@ PDE_DEPS__QUOTED :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
+common/cmd \
+common/source \
+driverlib \
+driverlib/ccs/Debug \
+driverlib/ccs/Release \
+headers/cmd \
+headers/source \
 

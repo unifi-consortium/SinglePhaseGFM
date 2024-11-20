@@ -5,6 +5,12 @@
 SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
+A_SRCS += \
+../libc.a 
+
+LIB_SRCS += \
+../rts2800_fpu32.lib 
+
 ASM_SRCS += \
 ../F2837xD_CodeStartBranch.asm \
 ../F2837xD_usDelay.asm 
@@ -90,5 +96,8 @@ C_SRCS__QUOTED += \
 ASM_SRCS__QUOTED += \
 "../F2837xD_CodeStartBranch.asm" \
 "../F2837xD_usDelay.asm" 
+
+A_SRCS__QUOTED += \
+"../libc.a" 
 
 
