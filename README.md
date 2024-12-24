@@ -11,6 +11,16 @@
 ![alt text](docs/images/singlephase_env3.png)
 
 ## Environment Configuration Selected
+Several macro definition located in “Amain.h” should be configured to run the inverter at desired modes before compiling and building the project. 
+
+Macro “ControlType” is the primary macro to define the inverter operation mode. 
+
+Only when “ControlType” is defined as “SingleLoopGfm” or “DualLoopGfm”, the macro “GfmType” determines the GFM power loop algorithm as droop, VSM, or dVOC.
+
+Macro “PwmMethod” controls PWM method as either unipolar PWM or bipolar PWM. Default value of “PwmMethod”is Unipolar Pwm.
+
+![alt text](docs/images/singlephase_precompilation1.png)
+
 
 ## Precompilation Configuration
 
