@@ -23,9 +23,9 @@
     * SW6==0 so that no manual trip
     * SW5==0 so that no manual  trip clearance signal is given.
 * In the codes Amian.h, here we set macro definition as below
-      #define GfmType GfmdVOC
-      #define ControlType DualLoopGfm
-      #define PwmMethod UnipolarPwm
+    *  #define GfmType GfmdVOC
+    *  #define ControlType DualLoopGfm
+    *  #define PwmMethod UnipolarPwm
 * In Amain.c — KeyInit(); set Pref = 0, Qref=0, and Imax as your tolerated maximum magnitude of AC current for software protection.
 
 2. 12V DC power on, 200V DC power on (set enough current limit s.t. it does not affect nominal operation)
