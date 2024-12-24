@@ -22,11 +22,11 @@ Macro “PwmMethod” controls PWM method as either unipolar PWM or bipolar PWM.
 ![alt text](docs/images/singlephase_precompilation1.png)
 
 ## Key Control & Flag Variables
-Here in the following table : W(Writable) means we can or need to change the value of the variables in CCS watching window for nominal operation.
+Here in the following table : Write (Writable) means we can or need to change the value of the variables in CCS watching window for nominal operation.
 
 GFM-Control related references such as PQ references are not listed here. Her only key variables for startup, protection, monitoring, and nominal operation are listed.
 
-|Register | Permission |Description|
+|Variable | Read or Write |Description|
 |:-------------:|:-------------:| :-----:|
 | SYNC_STATUS   | Read/Write          | SYNC_STATUS=1, inverter running at PreSync Mode; SYNC_STATUS=0, inverter exits PreSync Mode. Note that when RELAY==1, SYNC_STATUS is automatically cleared.|
 | FLT_STATUS   | Read        | 0: no fault output from gate drivers; 1: fault detected by gate drivers.|
@@ -34,8 +34,24 @@ GFM-Control related references such as PQ references are not listed here. Her on
 | RESET    | Read | Set and cleared to reset the gate driver;  |
 
 ![alt text](docs/images/singlephase_keyctrl1.png)
+
+|Variable | Read or Write |Description|
+|:-------------:|:-------------:| :-----:|
+| RELAY   | Read         | RELAY=SW2; SW2 is a manual switch. By changing this manual switch position, we can drive GPIO35 to turn on/off the relay on AC side.|
+
 ![alt text](docs/images/singlephase_keyctrl2.png)
+
+|Variable | Read or Write |Description|
+|:-------------:|:-------------:| :-----:|
+| ClearTripFlag   | Read/Write        | Set (=1) to clear the fault, enable the PWM, intialize the controller, and reset the gate drivers. Then it will automatically clear (=0) itself.|
+
 ![alt text](docs/images/singlephase_keyctrl3.png)
+
+|Variable | Read or Write |Description|
+|:-------------:|:-------------:| :-----:|
+| FaultTypeFlag   | Read        | Show different fault types; 0: no fault; 1: AC over currrent from software; 2: gate driver FO;
+3: manually tripped by manual switch SW6.|
+
 ![alt text](docs/images/singlephase_keyctrl4.png)
 
 ## GFM SOP (dVOC control with inner loops):
