@@ -64,8 +64,8 @@
 // Voltage sensing circuit sensing input resistance ratio R2/R1
 #define VAC_DRIFT_TUNED              1.530019004218497f
 #define VAC_SENSING_TUNED_RATIO      132.8867315447621f
-#define VAC_SENSING_RES_4M30K_RATIO  133.333333333 // R2=4M¦¸, R1=30k¦¸
-#define VAC_SENSING_RES_3M30K_RATIO  100.000000000 // R2=3M¦¸, R1=30k¦¸
+#define VAC_SENSING_RES_4M30K_RATIO  133.333333333 // R2=4MÂ¦Â¸, R1=30kÂ¦Â¸
+#define VAC_SENSING_RES_3M30K_RATIO  100.000000000 // R2=3MÂ¦Â¸, R1=30kÂ¦Â¸
 
 // AC Current sensing circuit
 #define IAC_DRIFT_TUNED              1.516776905326749f
