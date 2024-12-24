@@ -24,13 +24,29 @@ Macro “PwmMethod” controls PWM method as either unipolar PWM or bipolar PWM.
 ## Key Control & Flag Variables
 Here in the following table : W(Writable) means we can or need to change the value of the variables in CCS watching window for nominal operation.
 
+GFM-Control related references such as PQ references are not listed here. Her only key variables for startup, protection, monitoring, and nominal operation are listed.
+
+|:-------------:|:-------------:| :-----:|
+| SYNC_STATUS   | R/W           | SYNC_STATUS=1, inverter running at PreSync Mode; SYNC_STATUS=0, inverter exits PreSync Mode. Note that when RELAY==1, SYNC_STATUS is automatically cleared.|
+| ------------- |:-------------:| :-----:|
+
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-GFM-Control related references such as PQ references are not listed here. Her only key variables for startup, protection, monitoring, and nominal operation are listed.
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ![alt text](docs/images/singlephase_keyctrl1.png)
 ![alt text](docs/images/singlephase_keyctrl2.png)
