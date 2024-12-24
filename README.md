@@ -5,10 +5,12 @@
 1. TI Code Composer Studio v10
 2. TI C2000Ware v5.0.0.00
 
+
 ## Environment Configuration Selected
 ![alt text](docs/images/singlephase_env1.png)
 ![alt text](docs/images/singlephase_env2.png)
 ![alt text](docs/images/singlephase_env3.png)
+
 
 ## Precompilation Configuration
 Several macro definition located in “Amain.h” should be configured to run the inverter at desired modes before compiling and building the project. 
@@ -20,6 +22,7 @@ Only when “ControlType” is defined as “SingleLoopGfm” or “DualLoopGfm�
 Macro “PwmMethod” controls PWM method as either unipolar PWM or bipolar PWM. Default value of “PwmMethod”is Unipolar Pwm.
 
 ![alt text](docs/images/singlephase_precompilation1.png)
+
 
 ## Key Control & Flag Variables
 Here in the following table : Write (Writable) means we can or need to change the value of the variables in CCS watching window for nominal operation.
@@ -52,6 +55,7 @@ GFM-Control related references such as PQ references are not listed here. Her on
 | FaultTypeFlag   | Read        | Show different fault types; 0: no fault; 1: AC over currrent from software; 2: gate driver FO; 3: manually tripped by manual switch SW6.|
 
 ![alt text](docs/images/singlephase_keyctrl4.png)
+
 
 ## GFM SOP (dVOC control with inner loops):
 1. Before power on: 
@@ -103,7 +107,9 @@ GFM-Control related references such as PQ references are not listed here. Her on
   c. Let SW6=0.
   d. Go back to Step 4.
 
+
 ### Project: SinglePhaseGFM_1500W_120V
+
 
 #### Include Options
 - Include search paths:
@@ -114,6 +120,7 @@ GFM-Control related references such as PQ references are not listed here. Her on
 
 - Preinclude files:
   - Not specified.
+
 
 #### Library and Command Files
 - Library files:
