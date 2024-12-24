@@ -29,18 +29,8 @@ GFM-Control related references such as PQ references are not listed here. Her on
 |Register | Permission |Description|
 |:-------------:|:-------------:| :-----:|
 | SYNC_STATUS   | Read/Write          | SYNC_STATUS=1, inverter running at PreSync Mode; SYNC_STATUS=0, inverter exits PreSync Mode. Note that when RELAY==1, SYNC_STATUS is automatically cleared.|
-
-
-|Register | Permission |Description|
-|:-------------:|:-------------:| :-----:|
 | FLT_STATUS   | Read        | 0: no fault output from gate drivers; 1: fault detected by gate drivers.|
-
-|Register | Permission |Description|
-|:-------------:|:-------------:| :-----:|
 | READY      | Read | 0: MOSFET gate drivers not ready; 1: all ready; |
-
-|Register | Permission |Description|
-|:-------------:|:-------------:| :-----:|
 | RESET    | Read | Set and cleared to reset the gate driver;  |
 
 ![alt text](docs/images/singlephase_keyctrl1.png)
