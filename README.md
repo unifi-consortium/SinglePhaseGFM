@@ -5,12 +5,12 @@
 1. TI Code Composer Studio v10
 2. TI C2000Ware v5.0.0.00
 
-## Environment Configuration and Properties
+## Environment Configuration Selected
 ![alt text](docs/images/singlephase_env1.png)
 ![alt text](docs/images/singlephase_env2.png)
 ![alt text](docs/images/singlephase_env3.png)
 
-## Environment Configuration Selected
+## Precompilation Configuration
 Several macro definition located in “Amain.h” should be configured to run the inverter at desired modes before compiling and building the project. 
 
 Macro “ControlType” is the primary macro to define the inverter operation mode. 
@@ -21,10 +21,21 @@ Macro “PwmMethod” controls PWM method as either unipolar PWM or bipolar PWM.
 
 ![alt text](docs/images/singlephase_precompilation1.png)
 
-
-## Precompilation Configuration
-
 ## Key Control & Flag Variables
+Here in the following table : W(Writable) means we can or need to change the value of the variables in CCS watching window for nominal operation.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+GFM-Control related references such as PQ references are not listed here. Her only key variables for startup, protection, monitoring, and nominal operation are listed.
+
+![alt text](docs/images/singlephase_keyctrl1.png)
+![alt text](docs/images/singlephase_keyctrl2.png)
+![alt text](docs/images/singlephase_keyctrl3.png)
+![alt text](docs/images/singlephase_keyctrl4.png)
 
 ## GFM SOP (dVOC control with inner loops):
 1. Before power on: 
