@@ -16,17 +16,17 @@
 ## GFM SOP (dVOC control with inner loops):
 1. Before power on: 
 
-  a. Make sure the hardware connection is set correctly with relay off.
-  b. Make sure the controlCARD is set correctly (referring to 1.5kW hardware design documents Section ControlCARD Setting).
-  c. Make sure manual switches at the right position:
-    i. SW2==0 so that RELAY is off
-   ii. SW6==0 so that no manual trip
-  iii. SW5==0 so that no manual  trip clearance signal is given.
-  d. In the codes Amian.h, here we set macro definition as below
+* Make sure the hardware connection is set correctly with relay off.
+* Make sure the controlCARD is set correctly (referring to 1.5kW hardware design documents Section ControlCARD Setting).
+* Make sure manual switches at the right position:
+    * SW2==0 so that RELAY is off
+    * SW6==0 so that no manual trip
+    * SW5==0 so that no manual  trip clearance signal is given.
+* In the codes Amian.h, here we set macro definition as below
       #define GfmType GfmdVOC
       #define ControlType DualLoopGfm
       #define PwmMethod UnipolarPwm
-  e. In Amain.c — KeyInit(); set Pref = 0, Qref=0, and Imax as your tolerated maximum magnitude of AC current for software protection.
+* In Amain.c — KeyInit(); set Pref = 0, Qref=0, and Imax as your tolerated maximum magnitude of AC current for software protection.
 
 2. 12V DC power on, 200V DC power on (set enough current limit s.t. it does not affect nominal operation)
 
