@@ -28,7 +28,6 @@ GFM-Control related references such as PQ references are not listed here. Her on
 
 |:-------------:|:-------------:| :-----:|
 | SYNC_STATUS   | R/W           | SYNC_STATUS=1, inverter running at PreSync Mode; SYNC_STATUS=0, inverter exits PreSync Mode. Note that when RELAY==1, SYNC_STATUS is automatically cleared.|
-| ------------- |:-------------:| :-----:|
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
