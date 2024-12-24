@@ -7,6 +7,8 @@
 
 ## Environment Configuration and Properties
 ![alt text](docs/images/singlephase_env1.png)
+![alt text](docs/images/singlephase_env2.png)
+![alt text](docs/images/singlephase_env3.png)
 
 ## Environment Configuration Selected
 
