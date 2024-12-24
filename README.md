@@ -107,37 +107,6 @@ GFM-Control related references such as PQ references are not listed here. Her on
   c. Let SW6=0.
   d. Go back to Step 4.
 
-
-### Project: SinglePhaseGFM_1500W_120V
-
-
-#### Include Options
-- Include search paths:
-  - `${COM_TI_C2000WARE_SOFTWARE_PACKAGE_INCLUDE_PATH}`
-  - `${CG_TOOL_ROOT}/include`
-  - `${INSTALLROOT_F2837XD}/headers/include`
-  - `${INSTALLROOT_F2837XD}/common/include`
-
-- Preinclude files:
-  - Not specified.
-
-
-#### Library and Command Files
-- Library files:
-  - `rts2800_fpu32.lib`
-- Command files:
-  - `2837xD_RAM_lnk_cpu1.cmd`
-  - `F2837xD_Headers_nonBIOS_cpu1.cmd`
-
-- Library search paths:
-  - `${COM_TI_C2000WARE_SOFTWARE_PACKAGE_LIBRARY_PATH}`
-  - `${CG_TOOL_ROOT}/lib`
-  - `${CG_TOOL_ROOT}/include`
-  - `${INSTALLROOT_F2837XD}/common/cmd`
-  - `${INSTALLROOT_F2837XD}/headers/cmd`
-
----
-
 For more detailed information about the configuration and settings, refer to the project files.
 
 # TODO:
