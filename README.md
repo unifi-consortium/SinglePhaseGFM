@@ -6,6 +6,7 @@
 2. TI C2000Ware v5.0.0.00
 
 ## Environment Configuration and Properties
+![alt text](docs/images/singlephase_env1.png)
 
 ## Environment Configuration Selected
 
