@@ -49,8 +49,7 @@ GFM-Control related references such as PQ references are not listed here. Her on
 
 |Variable | Read or Write |Description|
 |:-------------:|:-------------:| :-----:|
-| FaultTypeFlag   | Read        | Show different fault types; 0: no fault; 1: AC over currrent from software; 2: gate driver FO;
-3: manually tripped by manual switch SW6.|
+| FaultTypeFlag   | Read        | Show different fault types; 0: no fault; 1: AC over currrent from software; 2: gate driver FO; 3: manually tripped by manual switch SW6.|
 
 ![alt text](docs/images/singlephase_keyctrl4.png)
 
