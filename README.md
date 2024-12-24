@@ -26,7 +26,8 @@ Here in the following table : W(Writable) means we can or need to change the val
 
 GFM-Control related references such as PQ references are not listed here. Her only key variables for startup, protection, monitoring, and nominal operation are listed.
 
-
+|Register | Permission |Description|
+|:-------------:|:-------------:| :-----:|
 | SYNC_STATUS   | R/W           | SYNC_STATUS=1, inverter running at PreSync Mode; SYNC_STATUS=0, inverter exits PreSync Mode. Note that when RELAY==1, SYNC_STATUS is automatically cleared.|
 
 
