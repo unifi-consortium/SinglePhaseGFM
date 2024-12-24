@@ -133,11 +133,5 @@ GFM-Control related references such as PQ references are not listed here. Her on
 
 For more detailed information about the configuration and settings, refer to the project files.
 
-
-
-
-# SinglePhaseGFM
-Single phase GFM embedded firmware
-
 # TODO:
 Use strict HAL so code does not need to run on C2000
